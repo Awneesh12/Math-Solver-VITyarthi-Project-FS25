@@ -1,0 +1,35 @@
+MATH SOLVER SYSTEM
+
+--- Problem Statement ---
+
+We as a human often face difficulty in performing complex or repetitive calculations manually. Therefore, we may need different software that can be used for different tasks.
+
+To solve this, a centralized program is required that performs a wide range of tasks, quickly and accurately, with easy-to-use menu, that doesn’t confuse us or make us memorize complex formulae.
+
+--- Scope of the Project ---
+
+This program supports 9 types of Math Problems -
+- Basic Calculation (Addition, Subtraction, Multiplication, Division, and Exponential)
+- Quadratic Equation Solver
+- Two Linear Equation with Two Variables Solver
+- LCM and HCF Calculation
+- Prime Number Verifier and Prime Factor Calculator
+- Statistical Calculations (Mean, Median, Mode)
+- Area and Perimeter Calculator (Square, Rectangle, Circle, Triangle, Parallelogram)
+- Factorial Calculator
+- Matrix Operations (Addition, Multiplication, and Inverse)
+
+--- Target Users ---
+
+- Students: For quickly verifying solutions and understanding concepts.
+- Engineers an Technical Professionals: For rapid on-the-spot calculations during designing, analysis or testing.
+- Everyday Users: Anyone needing a quick and accurate solution to common mathematical problems.
+
+--- High-Level Features ---
+
+1. Menu-Driven Interface -
+	Simple numeric inputs for navigation of all features.
+2. Multiple Problem Support -
+	Supporting wide variety of Math Problems like Algebra, Statistics, Equations, and more.
+3. Error Handling -
+	Includes checks for Mathematical Impossibilities like Dividing by Zero, finding inverse of a Singular Matrix, etc.
