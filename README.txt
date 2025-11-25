@@ -32,7 +32,7 @@ This program supports 9 types of Math Problems -
 	Open your Terminal, and run,
 		pip install numpy
 3. Download the Code -
-	Save the Math Solver.py to you computer system.
+	Save the Math Solver.py to your computer system.
 4. Run the Script
 
 --- Instructions ---
