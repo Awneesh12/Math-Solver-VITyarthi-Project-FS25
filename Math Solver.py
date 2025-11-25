@@ -16,7 +16,7 @@ while True:
     "[8] Factorial Calculator \n" \
     "[9] Matrix Operations \n" \
     "[0] Exit \n\n"
-    "Please press the number key correspondiang to the feature you want to use: "))
+    "Please press the number key corresponding to the feature you want to use: "))
 
 # Feature --> Exit
     if feature==0:
@@ -381,11 +381,11 @@ while True:
                 continue
 
 # Common Code
-            totalElements=int(input("\nPlease state the Number of Elements of the Data: "))
+            totalElements=(int(input("\nPlease state the Number of Elements of the Data: ")))
             data=[]
 
             for i in range(1, totalElements+1):
-                data.append(int(input(f"Please input element {i} : ")))
+                data.append(float(input(f"Please input element {i} : ")))
             
             for i in range(totalElements):
                 for j in range(0, totalElements-i-1):
@@ -490,25 +490,25 @@ while True:
                     continue
 
                 if shape==1:
-                    side=int(input("\nWhat is the length of a side (in cm)? "))
+                    side=float(input("\nWhat is the length of a side (in cm)? "))
                     area=side*side
                     perimeter=4*side
                     shapeName="Square"
                 elif shape==2:
-                    length=int(input("\nWhat is the length of the Rectange (in cm)? "))
-                    breadth=int(input("What is the breadth of the Rectange (in cm)? "))
+                    length=float(input("\nWhat is the length of the Rectange (in cm)? "))
+                    breadth=float(input("What is the breadth of the Rectange (in cm)? "))
                     area=length*breadth
                     perimeter=2*(length+breadth)
                     shapeName="Rectangle"
                 elif shape==3:
-                    radius=int(input("\nWhat is the radius of the Circle (in cm)? "))
+                    radius=float(input("\nWhat is the radius of the Circle (in cm)? "))
                     area=math.pi*radius*radius
                     perimeter=2*math.pi*radius
                     shapeName="Circle"
                 elif shape==4:
-                    a=int(input("\nWhat is the length of first side (in cm)? "))
-                    b=int(input("what is the length of second side (in cm)? "))
-                    c=int(input("What is the length of third side (in cm)? "))
+                    a=float(input("\nWhat is the length of first side (in cm)? "))
+                    b=float(input("what is the length of second side (in cm)? "))
+                    c=float(input("What is the length of third side (in cm)? "))
                     perimeter=a+b+c
                     semiPerimeter=perimeter/2
                     notArea=semiPerimeter*(semiPerimeter-a)*(semiPerimeter-b)*(semiPerimeter-c)
@@ -519,15 +519,15 @@ while True:
                         area=math.sqrt(notArea)
                         shapeName="Triangle"
                 elif shape==5:
-                    knownSide=int(input("What is the length of a known side (in cm)? "))
-                    adjacentToKnownSide=int(input("What is the lenght of the adjacent side of the known side (in cm)? "))
-                    height=int(input("What is the height of the Parallelogram from a knwon side (in cm)? "))
+                    knownSide=float(input("What is the length of a known side (in cm)? "))
+                    adjacentToKnownSide=float(input("What is the lenght of the adjacent side of the known side (in cm)? "))
+                    height=float(input("What is the height of the Parallelogram from a knwon side (in cm)? "))
                     area=knownSide*height
                     perimeter=2*(knownSide+adjacentToKnownSide)
                     shapeName="Parallelogram"
 
 # Output
-                print(f"\nThe Area and Perimeter of {shapeName} are {area} and {perimeter} repectively\n")
+                print(f"\nThe Area and Perimeter of {shapeName} are {area} cm^2 and {perimeter} cm repectively\n")
                 break
             
             ASK=input("Do you want to find Area and Perimeter again? [Y/N] ").upper()
@@ -565,7 +565,7 @@ while True:
                 continue
 
 # Main Code and Output
-            num=int(input("\nType a number: "))
+            num=round(float(input("\nType a number: ")))
 
             while True:
                 if num<0:
@@ -638,42 +638,42 @@ while True:
 
                     if N==1:
                         print("\nPlease input the elements of Matrix A")
-                        a=int(input("What is the Element (1,1)? "))
-                        b=int(input("What is the Element (1,2)? "))
-                        c=int(input("What is the Element (2,1)? "))
-                        d=int(input("What is the Element (2,2)? "))
+                        a=float(input("What is the Element (1,1)? "))
+                        b=float(input("What is the Element (1,2)? "))
+                        c=float(input("What is the Element (2,1)? "))
+                        d=float(input("What is the Element (2,2)? "))
                         print()
                         print("Now you'll be asked for elements of Matrix B")
-                        e=int(input("What is the Element (1,1)? "))
-                        f=int(input("What is the Element (1,2)? "))
-                        g=int(input("What is the Element (2,1)? "))
-                        h=int(input("What is the Element (2,2)? "))
+                        e=float(input("What is the Element (1,1)? "))
+                        f=float(input("What is the Element (1,2)? "))
+                        g=float(input("What is the Element (2,1)? "))
+                        h=float(input("What is the Element (2,2)? "))
 
                         matrix_A=np.array([[a,b],[c,d]])
                         matrix_B=np.array([[e,f],[g,h]])
 
                     elif N==2:
                         print("\nPlease input the elements of Matrix A")
-                        a=int(input("What is the Element (1,1)? "))
-                        b=int(input("What is the Element (1,2)? "))
-                        c=int(input("What is the Element (1,3)? "))
-                        d=int(input("What is the Element (2,1)? "))
-                        e=int(input("What is the Element (2,2)? "))
-                        f=int(input("What is the Element (2,3)? "))
-                        g=int(input("What is the Element (3,1)? "))
-                        h=int(input("What is the Element (3,2)? "))
-                        i=int(input("What is the Element (3,3)? "))
+                        a=float(input("What is the Element (1,1)? "))
+                        b=float(input("What is the Element (1,2)? "))
+                        c=float(input("What is the Element (1,3)? "))
+                        d=float(input("What is the Element (2,1)? "))
+                        e=float(input("What is the Element (2,2)? "))
+                        f=float(input("What is the Element (2,3)? "))
+                        g=float(input("What is the Element (3,1)? "))
+                        h=float(input("What is the Element (3,2)? "))
+                        i=float(input("What is the Element (3,3)? "))
                         print()
                         print("Now you'll be asked for elements of Matrix B")
-                        j=int(input("What is the Element (1,1)? "))
-                        k=int(input("What is the Element (1,2)? "))
-                        l=int(input("What is the Element (1,3)? "))
-                        m=int(input("What is the Element (2,1)? "))
-                        n=int(input("What is the Element (2,2)? "))
-                        o=int(input("What is the Element (2,3)? "))
-                        p=int(input("What is the Element (3,1)? "))
-                        q=int(input("What is the Element (3,2)? "))
-                        r=int(input("What is the Element (3,3)? "))
+                        j=float(input("What is the Element (1,1)? "))
+                        k=float(input("What is the Element (1,2)? "))
+                        l=float(input("What is the Element (1,3)? "))
+                        m=float(input("What is the Element (2,1)? "))
+                        n=float(input("What is the Element (2,2)? "))
+                        o=float(input("What is the Element (2,3)? "))
+                        p=float(input("What is the Element (3,1)? "))
+                        q=float(input("What is the Element (3,2)? "))
+                        r=float(input("What is the Element (3,3)? "))
 
                         matrix_A=np.array([[a,b,c],[d,e,f],[g,h,i]])
                         matrix_B=np.array([[j,k,l],[m,n,o],[p,q,r]])
@@ -711,23 +711,23 @@ while True:
 
                     if N==1:
                         print("\nPlease input the elements of Matrix")
-                        a=int(input("What is the Element (1,1)? "))
-                        b=int(input("What is the Element (1,2)? "))
-                        c=int(input("What is the Element (2,1)? "))
-                        d=int(input("What is the Element (2,2)? "))
+                        a=float(input("What is the Element (1,1)? "))
+                        b=float(input("What is the Element (1,2)? "))
+                        c=float(input("What is the Element (2,1)? "))
+                        d=float(input("What is the Element (2,2)? "))
                         matrix=np.array([[a,b],[c,d]])
                     
                     elif N==2:
                         print("\nPlease input the elements of Matrix A")
-                        a=int(input("What is the Element (1,1)? "))
-                        b=int(input("What is the Element (1,2)? "))
-                        c=int(input("What is the Element (1,3)? "))
-                        d=int(input("What is the Element (2,1)? "))
-                        e=int(input("What is the Element (2,2)? "))
-                        f=int(input("What is the Element (2,3)? "))
-                        g=int(input("What is the Element (3,1)? "))
-                        h=int(input("What is the Element (3,2)? "))
-                        i=int(input("What is the Element (3,3)? "))
+                        a=float(input("What is the Element (1,1)? "))
+                        b=float(input("What is the Element (1,2)? "))
+                        c=float(input("What is the Element (1,3)? "))
+                        d=float(input("What is the Element (2,1)? "))
+                        e=float(input("What is the Element (2,2)? "))
+                        f=float(input("What is the Element (2,3)? "))
+                        g=float(input("What is the Element (3,1)? "))
+                        h=float(input("What is the Element (3,2)? "))
+                        i=float(input("What is the Element (3,3)? "))
                         matrix=np.array([[a,b,c],[d,e,f],[g,h,i]])
 
                     if np.linalg.det(matrix)!=0:
